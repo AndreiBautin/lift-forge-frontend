@@ -12,7 +12,17 @@ const routes = [
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
-  }
+  },
+
+  {
+    path: '/login',
+    component: () => import('src/pages/LoginPage.vue') // Updated path
+  },
+  
+  {
+    path: '/register',
+    component: () => import('src/pages/RegisterPage.vue') // Updated path
+  },
 ]
 
 export default routes
